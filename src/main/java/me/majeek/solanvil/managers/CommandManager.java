@@ -11,7 +11,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.Objects;
 import java.util.Set;
 
@@ -25,10 +24,8 @@ public class CommandManager implements CommandExecutor {
     }
 
     public SubCommand getCommand(Class<?> instance) {
-        for(Iterator<SubCommand> iterator = this.subCommands.iterator(); iterator.hasNext();) {
-            SubCommand subCommand = iterator.next();
-
-            if(subCommand.getClass().isAssignableFrom(instance)) {
+        for (SubCommand subCommand : this.subCommands) {
+            if (subCommand.getClass().isAssignableFrom(instance)) {
                 return subCommand;
             }
         }

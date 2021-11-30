@@ -13,17 +13,17 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-import java.util.AbstractList;
 import java.util.List;
 
 public class AnvilListener implements Listener {
     @EventHandler
     public void onBlockBreak(BlockBreakEvent event) {
-        AbstractList<Integer> locations = (AbstractList<Integer>) SolAnvil.getInstance().getAnvilDataConfig().getConfiguration().getIntegerList("locations");
-        for(int i = 0; i < locations.size(); i += 3) {
-            if(event.getBlock().getX() == locations.get(i) && event.getBlock().getY() == locations.get(i + 1) && event.getBlock().getZ() == locations.get(i + 2)) {
+        List<String> locations = SolAnvil.getInstance().getAnvilDataConfig().getConfiguration().getStringList("locations");
+
+        for(int i = 0; i < locations.size(); i += 4) {
+            if(event.getBlock().getX() == Integer.parseInt(locations.get(i)) && event.getBlock().getY() == Integer.parseInt(locations.get(i + 1)) && event.getBlock().getZ() == Integer.parseInt(locations.get(i + 2)) && event.getBlock().getWorld().getName().equals(locations.get(i + 3))) {
                 if(event.getPlayer().getGameMode() == GameMode.CREATIVE) {
-                    locations.subList(i, i + 3).clear();
+                    locations.subList(i, i + 4).clear();
 
                     SolAnvil.getInstance().getAnvilDataConfig().getConfiguration().set("locations", locations);
                     SolAnvil.getInstance().getAnvilDataConfig().saveConfig();
