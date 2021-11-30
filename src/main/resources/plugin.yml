@@ -1,0 +1,9 @@
+name: SolAnvil
+version: '${project.version}'
+main: me.majeek.solanvil.SolAnvil
+authors: [ Majeek ]
+website: https://www.fiverr.com/majeek_
+depend: [Vault]
+commands:
+  solanvil:
+    description: Main SolAnvil command

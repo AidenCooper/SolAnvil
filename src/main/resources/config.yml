@@ -1,0 +1,242 @@
+anvil:
+  name: "&7Sol Anvil"
+  lore:
+    - "Example lore."
+    - ""
+    - "&cExample lore."
+gui:
+  combine:
+    title: "&7Sol Magician"
+    anvil:
+      material: "ANVIL"
+      color: -1
+      enchanted: false
+      title: "&e&lThe Sol Magician"
+      lore:
+        - ""
+        - "&e&l* &rwill combine items for ??? cash."
+    confirm:
+      material: "STAINED_GLASS_PANE"
+      color: 5
+      enchanted: false
+      title: "&a&lConfirm Magic"
+      lore:
+        - "&7Click to &a&laccept &r&7and let the magic happen."
+        - ""
+        - "&ePrice: &r{price} cash"
+    decline:
+      material: "STAINED_GLASS_PANE"
+      color: 14
+      enchanted: false
+      title: "&c&lDecline Magic"
+      lore:
+        - "&7Click to &c&ldecline &r&7and don't let the magic happen."
+        - ""
+        - "&ePrice: &r{price} cash"
+    slot-1:
+      material: "ITEM_FRAME"
+      color: -1
+      enchanted: false
+      title: "&7Click on an"
+      lore:
+        - "&7enchanted item inside"
+        - "&7your inventory"
+    slot-2:
+      material: "ITEM_FRAME"
+      color: -1
+      enchanted: false
+      title: "&7Click on an"
+      lore:
+        - "&7enchanted item inside"
+        - "&7your inventory"
+  main:
+    title: "&7Sol Anvil"
+    combine:
+      material: "BOOK"
+      color: -1
+      enchanted: true
+      title: "&e&lThe Sol Magician"
+      lore:
+        - ""
+        - "&e&l* &rwill combine items for ??? cash."
+    repair:
+      material: "DIAMOND_CHESTPLATE"
+      color: -1
+      enchanted: true
+      title: "&e&lThe Sol Repairer"
+      lore:
+        - ""
+        - "&e&l* &rwill repair items for {price} cash."
+  repair:
+    title: "&7Sol Repairer"
+    anvil:
+      material: "ANVIL"
+      color: -1
+      enchanted: false
+      title: "&e&lThe Sol Repairer"
+      lore:
+        - ""
+        - "&e&l* &rwill repair items for {price} cash."
+    confirm:
+      material: "STAINED_GLASS_PANE"
+      color: 5
+      enchanted: false
+      title: "&a&lConfirm Repair"
+      lore:
+        - "&7Click to &a&laccept &r&7the repair."
+        - ""
+        - "&ePrice: &r{price} cash"
+    decline:
+      material: "STAINED_GLASS_PANE"
+      color: 14
+      enchanted: false
+      title: "&c&lDecline Repair"
+      lore:
+        - "&7Click to &c&ldecline &r&7the repair."
+        - ""
+        - "&ePrice: &r{price} cash"
+    slot:
+      material: "ITEM_FRAME"
+      color: -1
+      enchanted: false
+      title: "&7Click on an item"
+      lore:
+        - "&7that needs repairing"
+price:
+  combine:
+    add:
+      ARROW-DAMAGE-1: 100
+      ARROW-DAMAGE-2: 200
+      ARROW-DAMAGE-3: 300
+      ARROW-DAMAGE-4: 400
+      ARROW-DAMAGE-5: 500
+      ARROW-FIRE-1: 100
+      ARROW-INFINITE-1: 100
+      ARROW-KNOCKBACK-1: 100
+      ARROW-KNOCKBACK-2: 200
+      DAMAGE-ALL-1: 100
+      DAMAGE-ALL-2: 200
+      DAMAGE-ALL-3: 300
+      DAMAGE-ALL-4: 400
+      DAMAGE-ALL-5: 500
+      DAMAGE-ARTHROPODS-1: 100
+      DAMAGE-ARTHROPODS-2: 200
+      DAMAGE-ARTHROPODS-3: 300
+      DAMAGE-ARTHROPODS-4: 400
+      DAMAGE-ARTHROPODS-5: 500
+      DAMAGE-UNDEAD-1: 100
+      DAMAGE-UNDEAD-2: 200
+      DAMAGE-UNDEAD-3: 300
+      DAMAGE-UNDEAD-4: 400
+      DAMAGE-UNDEAD-5: 500
+      DEPTH-STRIDER-1: 100
+      DEPTH-STRIDER-2: 200
+      DEPTH-STRIDER-3: 300
+      DIG-SPEED-1: 100
+      DIG-SPEED-2: 200
+      DIG-SPEED-3: 300
+      DIG-SPEED-4: 400
+      DIG-SPEED-5: 500
+      DURABILITY-1: 100
+      DURABILITY-2: 200
+      DURABILITY-3: 300
+      FIRE-ASPECT-1: 100
+      FIRE-ASPECT-2: 200
+      KNOCKBACK-1: 100
+      KNOCKBACK-2: 200
+      LOOT-BONUS-BLOCKS-1: 100
+      LOOT-BONUS-BLOCKS-2: 200
+      LOOT-BONUS-BLOCKS-3: 300
+      LOOT-BONUS-MOBS-1: 100
+      LOOT-BONUS-MOBS-2: 200
+      LOOT-BONUS-MOBS-3: 300
+      LUCK-1: 100
+      LUCK-2: 200
+      LUCK-3 : 300
+      LURE-1: 100
+      LURE-2: 200
+      LURE-3: 300
+      OXYGEN-1: 100
+      OXYGEN-2: 200
+      OXYGEN-3: 300
+      PROTECTION-ENVIRONMENTAL-1: 100
+      PROTECTION-ENVIRONMENTAL-2: 200
+      PROTECTION-ENVIRONMENTAL-3: 300
+      PROTECTION-ENVIRONMENTAL-4: 400
+      PROTECTION-EXPLOSIONS-1: 100
+      PROTECTION-EXPLOSIONS-2: 200
+      PROTECTION-EXPLOSIONS-3: 300
+      PROTECTION-EXPLOSIONS-4: 400
+      PROTECTION-FALL-1: 100
+      PROTECTION-FALL-2: 200
+      PROTECTION-FALL-3: 300
+      PROTECTION-FALL-4: 400
+      PROTECTION-FIRE-1: 100
+      PROTECTION-FIRE-2: 200
+      PROTECTION-FIRE-3: 300
+      PROTECTION-FIRE-4: 400
+      PROTECTION-PROJECTILE-1: 100
+      PROTECTION-PROJECTILE-2: 200
+      PROTECTION-PROJECTILE-3: 300
+      PROTECTION-PROJECTILE-4: 400
+      SILK-TOUCH-1: 100
+      THORNS-1: 100
+      THORNS-2: 200
+      THORNS-3: 300
+      WATER-WORKER-1: 100
+    upgrade-to:
+      ARROW-DAMAGE-2: 200
+      ARROW-DAMAGE-3: 300
+      ARROW-DAMAGE-4: 400
+      ARROW-DAMAGE-5: 500
+      ARROW-KNOCKBACK-2: 200
+      DAMAGE-ALL-2: 200
+      DAMAGE-ALL-3: 300
+      DAMAGE-ALL-4: 400
+      DAMAGE-ALL-5: 500
+      DAMAGE-ARTHROPODS-2: 200
+      DAMAGE-ARTHROPODS-3: 300
+      DAMAGE-ARTHROPODS-4: 400
+      DAMAGE-ARTHROPODS-5: 500
+      DAMAGE-UNDEAD-2: 200
+      DAMAGE-UNDEAD-3: 300
+      DAMAGE-UNDEAD-4: 400
+      DAMAGE-UNDEAD-5: 500
+      DEPTH-STRIDER-2: 200
+      DEPTH-STRIDER-3: 300
+      DIG-SPEED-2: 200
+      DIG-SPEED-3: 300
+      DIG-SPEED-4: 400
+      DIG-SPEED-5: 500
+      DURABILITY-2: 200
+      DURABILITY-3: 300
+      FIRE-ASPECT-2: 200
+      KNOCKBACK-2: 200
+      LOOT-BONUS-BLOCKS-2: 200
+      LOOT-BONUS-BLOCKS-3: 300
+      LOOT-BONUS-MOBS-2: 200
+      LOOT-BONUS-MOBS-3: 300
+      LUCK-2: 200
+      LUCK-3: 300
+      LURE-2: 200
+      LURE-3: 300
+      OXYGEN-2: 200
+      OXYGEN-3: 300
+      PROTECTION-ENVIRONMENTAL-2: 200
+      PROTECTION-ENVIRONMENTAL-3: 300
+      PROTECTION-ENVIRONMENTAL-4: 400
+      PROTECTION-EXPLOSIONS-2: 200
+      PROTECTION-EXPLOSIONS-3: 300
+      PROTECTION-EXPLOSIONS-4: 400
+      PROTECTION-FALL-2: 200
+      PROTECTION-FALL-3: 300
+      PROTECTION-FALL-4: 400
+      PROTECTION-FIRE-2: 200
+      PROTECTION-FIRE-3: 300
+      PROTECTION-FIRE-4: 400
+      PROTECTION-PROJECTILE-2: 200
+      PROTECTION-PROJECTILE-3: 300
+      PROTECTION-PROJECTILE-4: 400
+      THORNS-2: 200
+      THORNS-3: 300
+  repair: 5000
