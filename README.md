@@ -1,5 +1,5 @@
 Commands:
-- /solanvil anvil - solanvil.anvil - Gives you a custom anvil used to access the gui.
+- /solanvil anvil - solanvil.anvil - Gives you a custom anvil used to access the gui. P.S. Anvil can only be broken in creative mode.
 - /solanvil gui - solanvil.gui - Opens the gui.
 - /solanvil help - solanvil.help - Displays the main help message.
 - /solanvil reload - solanvil.reload - Reloads the config files.
