@@ -11,3 +11,4 @@ Configs:
 
 Issues:
 - Feel free to leave any issues in the issues tab on github or contact me through the fiverr order for a revision. (Unlimited revisions).
+- The updated jar files are located under the Releases tab.
