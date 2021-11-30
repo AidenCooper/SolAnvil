@@ -5,7 +5,7 @@ Commands:
 - /solanvil reload - solanvil.reload - Reloads the config files.
 
 Configs:
-- anvil_data.yml - Used to store all custom anvils placement. DO NOT EDIT! 
+- anvil_data.yml - Used to store all custom anvils placement. ONLY EDIT IF YOU DELETED A WORLD WITH ANVIL BLOCKS IN THEM, WILL STILL WORK IF YOU DONT.
 - config.yml - Used to edit the properties of the gui. You can use {price} in the lores to get the current price of the item.
 - messages.yml - Used to configure all messages sent to the player. {prefix} is a link to the editable prefix on the first line.
 
