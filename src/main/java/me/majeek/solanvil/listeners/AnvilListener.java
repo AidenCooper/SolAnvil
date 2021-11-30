@@ -42,12 +42,13 @@ public class AnvilListener implements Listener {
             ItemStack itemNMS = CraftItemStack.asNMSCopy(event.getItemInHand());
 
             if(itemNMS.hasTag() && itemNMS.getTag().get(AnvilHandler.getAnvilIdentity()) != null) {
-                List<Integer> locations = SolAnvil.getInstance().getAnvilDataConfig().getConfiguration().getIntegerList("locations");
-                int[] location = { event.getBlockPlaced().getX(), event.getBlockPlaced().getY(), event.getBlockPlaced().getZ() };
+                List<String> locations = SolAnvil.getInstance().getAnvilDataConfig().getConfiguration().getStringList("locations");
+                String[] location = { Integer.toString(event.getBlockPlaced().getX()), Integer.toString(event.getBlockPlaced().getY()), Integer.toString(event.getBlockPlaced().getZ()) };
 
                 locations.add(location[0]);
                 locations.add(location[1]);
                 locations.add(location[2]);
+                locations.add(event.getBlockPlaced().getWorld().getName());
 
                 SolAnvil.getInstance().getAnvilDataConfig().getConfiguration().set("locations", locations);
                 SolAnvil.getInstance().getAnvilDataConfig().saveConfig();
@@ -58,10 +59,10 @@ public class AnvilListener implements Listener {
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
         if(event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-            List<Integer> locations = SolAnvil.getInstance().getAnvilDataConfig().getConfiguration().getIntegerList("locations");
+            List<String> locations = SolAnvil.getInstance().getAnvilDataConfig().getConfiguration().getStringList("locations");
 
-            for(int i = 0; i < locations.size(); i += 3) {
-                if(event.getClickedBlock().getX() == locations.get(i) && event.getClickedBlock().getY() == locations.get(i + 1) && event.getClickedBlock().getZ() == locations.get(i + 2)) {
+            for(int i = 0; i < locations.size(); i += 4) {
+                if(event.getClickedBlock().getX() == Integer.parseInt(locations.get(i)) && event.getClickedBlock().getY() == Integer.parseInt(locations.get(i + 1)) && event.getClickedBlock().getZ() == Integer.parseInt(locations.get(i + 2)) && event.getClickedBlock().getWorld().getName().equals(locations.get(i + 3))) {
                     event.setCancelled(true);
                     GuiHandler.displayMainGui(event.getPlayer());
                     break;
